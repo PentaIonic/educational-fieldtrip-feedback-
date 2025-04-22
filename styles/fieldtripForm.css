@@ -172,7 +172,7 @@ textarea {
 
 .educational-rating label input:focus:not(:checked) ~ .icon:last-child {
   color: #000000;
-  text-shadow: 0 0 5px #09f;
+  text-shadow: 0 0 5px gold;
 }
 
 .cleanliness-rating {
@@ -236,7 +236,7 @@ textarea {
 
 .cleanliness-rating label input:focus:not(:checked) ~ .icon:last-child {
   color: #000000;
-  text-shadow: 0 0 5px #09f;
+  text-shadow: 0 0 5px gold;
 }
 
 .submit-container {
@@ -244,7 +244,7 @@ textarea {
 }
 
 .form-container button {
-  background-color: dimgray;
+  background-color: var(--secondary-color);
   color: white;
   border: 2px solid #ccc;
   text-align: center;

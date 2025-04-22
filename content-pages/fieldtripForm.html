@@ -15,6 +15,7 @@
 
     <!-- Local Styles -->
     <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/components/prompt-message.css">
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/fieldtripForm.css" />
 
@@ -60,18 +61,21 @@
     </header>
     <!-- Web Content -->
     <main>
+      <!-- CSS Frame of Form -->
       <div class="form-container">
         <form action="" id="fieldtripSurvey">
+          <!-- Form Background Header -->
           <div class="form-header">
             <h1>Educational Fieldtrip</h1>
             <h2>Feedback</h2>
           </div>
+          <!-- Student Information Section -->
           <div class="student-info">
             <h4>STUDENT INFO</h4>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-            <label for="grade">Grade</label>
-            <select id="grade" name="grade">
+            <label for="name">Name<span style="color: red"><b>*</b></span></label>
+            <input type="text" id="name" name="name" placeholder="Name" required/>
+            <label for="grade">Grade<span style="color: red"><b>*</b></span></label>
+            <select id="grade" name="grade" required>
               <option value="" selected disabled>Select Grade</option>
               <option value="Grade 7">Grade 7</option>
               <option value="Grade 8">Grade 8</option>
@@ -79,31 +83,32 @@
               <option value="Grade 10">Grade 10</option>
             </select>
           </div>
+          <!-- Destination Details Section -->
           <div class="destination">
             <h4>DESTINATION DETAILS</h4>
-            <label for="destination">Destination:</label>
-            <select id="destination" name="destination">
-              <option value="">Select Destination</option>
+            <label for="destination">Destination<span style="color: red"><b>*</b></span></label>
+            <select id="destination" name="destination" required>
+              <option value="" selected disabled>Select Destination</option>
               <option value="The Mind Museum">The Mind Museum</option>
               <option value="Rizal Park Hotel">Rizal Park Hotel</option>
               <option value="Art in Island">Art in Island</option>
               <option value="La Mesa Eco Park">La Mesa Eco Park</option>
             </select>
 
-            <label for="visit-date">Date of Visit:</label>
-            <input type="date" id="visit-date" name="visit-date" />
+            <label for="visit-date">Date of Visit<span style="color: red"><b>*</b></span></label>
+            <input type="date" id="visit-date" name="visit-date" required/>
           </div>
-
+          <!-- Educational Feedback Section -->
           <div class="learnings">
             <h4>LEARNING FEEDBACK</h4>
-            <label for="favorite">Favorite Part of the Visit:</label>
+            <label for="favorite">Favorite Part of the Visit</label>
             <input type="text" id="favorite" name="favorite" />
             <label for="learned">What did you learn from the trip?</label>
             <textarea id="learned" name="learned" rows="4"></textarea>
-            <label>Rate Educational Value:</label>
+            <label>Rate Educational Value<span style="color: red"><b>*</b></span></label>
             <div class="educational-rating" id="educational-rating">
               <label>
-                <input type="radio" name="educStars" value="1" />
+                <input type="radio" name="educStars" value="1" required/>
                 <span class="icon">★</span>
               </label>
               <label>
@@ -134,13 +139,13 @@
               </label>
             </div>
           </div>
-
+          <!-- Tourist Spot Feedback Section -->
           <div class="experience">
             <h4>TOURIST SPOT FEEDBACK</h4>
-            <label>Rate Cleanliness:</label>
+            <label>Rate Cleanliness<span style="color: red"><b>*</b></span></label>
             <div class="cleanliness-rating" id="cleanliness-rating">
               <label>
-                <input type="radio" name="cleanStars" value="1" />
+                <input type="radio" name="cleanStars" value="1" required/>
                 <span class="icon">★</span>
               </label>
               <label>
@@ -196,11 +201,72 @@
               >
             </div>
 
-            <label for="suggestions">Suggestions:</label>
+            <label for="suggestions">Suggestions</label>
             <textarea id="suggestions" name="suggestions" rows="4"></textarea>
           </div>
+          <!-- Submit Button -->
           <div class="submit-container">
-            <button type="submit">Submit</button>
+            <button type="button" onclick="displayPrompt()">Submit</button>
+          </div>
+          <!-- Prompt Messages -->
+          <div class="prompt-message" id="promptMessage">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p>Are you sure with the details?</p>
+                  <div class="prompt-button-container">
+                    <input
+                      type="submit"
+                      value="Yes"
+                      id="yesButton"
+                      class="prompt-button yes"
+                      onclick="promptMessage.style.display='none'"
+                    />
+                    <input
+                      type="button"
+                      value="No"
+                      id="noButton"
+                      class="prompt-button no"
+                      onclick="promptMessage.style.display='none'"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prompt-success" id="promptSuccess">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p id="prompt-text">
+                    "Thank you for participating in the survey!"
+                  </p>
+                  <input
+                    type="button"
+                    value="Close"
+                    class="prompt-button Close"
+                    onclick="promptSuccess.style.display='none'"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prompt-denied" id="promptDenied">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p id="prompt-text">
+                    "Form cannot be submitted, there are missing fields."
+                  </p>
+                  <input
+                    type="button"
+                    value="Close"
+                    class="prompt-button Close"
+                    onclick="promptDenied.style.display='none'"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
