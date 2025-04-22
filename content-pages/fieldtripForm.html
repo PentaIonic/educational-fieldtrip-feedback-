@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Web Page Information & Responsive Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Styles & Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/components/webFrame.css" />
+    <link rel="stylesheet" href="../styles/fieldtripForm.css" />
+
+    <!-- Web Page Information-->
+    <title>Educational Fieldtrip Feedback</title>
+    <link
+      rel="icon"
+      href="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <div class="header-container">
+        <div class="logo-area">
+          <img
+            src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+            alt="Seal of Department of Education"
+          />
+          <label for="logo-name">Educational Tours Inc.</label>
+        </div>
+        <div class="main-panel-tabs">
+          <div class="dropdown-survey">
+            <button class="dropSurveyBtn">Surveys</button>
+            <div class="dropdown-survey-content">
+              <a href="#">CoVID 19 Survey</a>
+              <a href="./fieldtripSurvey.html">Fieldtrip Feedback</a>
+            </div>
+          </div>
+          <div class="dropdown-records">
+            <button class="dropRecordsBtn">Records</button>
+            <div class="dropdown-records-content">
+              <a href="#">Health Records</a>
+              <a href="#">Feedback Records</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-button" onclick="moveSidebar()" id="sidebarButton">
+          <img src="../assets/icons/menu-icon.svg" alt="Sidebar" />
+        </div>
+      </div>
+    </header>
+    <!-- Web Content -->
+    <main>
+      <div class="form-container">
+        <form action="" id="fieldtripSurvey">
+          <div class="form-header">
+            <h1>Educational Fieldtrip</h1>
+            <h2>Feedback</h2>
+          </div>
+          <div class="student-info">
+            <h4>STUDENT INFO</h4>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="grade">Grade</label>
+            <select id="grade" name="grade">
+              <option value="" selected disabled>Select Grade</option>
+              <option value="Grade 7">Grade 7</option>
+              <option value="Grade 8">Grade 8</option>
+              <option value="Grade 9">Grade 9</option>
+              <option value="Grade 10">Grade 10</option>
+            </select>
+          </div>
+          <div class="destination">
+            <h4>DESTINATION DETAILS</h4>
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+              <option value="">Select Destination</option>
+              <option value="The Mind Museum">The Mind Museum</option>
+              <option value="Rizal Park Hotel">Rizal Park Hotel</option>
+              <option value="Art in Island">Art in Island</option>
+              <option value="La Mesa Eco Park">La Mesa Eco Park</option>
+            </select>
+
+            <label for="visit-date">Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit-date" />
+          </div>
+
+          <div class="learnings">
+            <h4>LEARNING FEEDBACK</h4>
+            <label for="favorite">Favorite Part of the Visit:</label>
+            <input type="text" id="favorite" name="favorite" />
+            <label for="learned">What did you learn from the trip?</label>
+            <textarea id="learned" name="learned" rows="4"></textarea>
+            <label>Rate Educational Value:</label>
+            <div class="educational-rating" id="educational-rating">
+              <label>
+                <input type="radio" name="educStars" value="1" />
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="educStars" value="2" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="educStars" value="3" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="educStars" value="4" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="educStars" value="5" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="experience">
+            <h4>TOURIST SPOT FEEDBACK</h4>
+            <label>Rate Cleanliness:</label>
+            <div class="cleanliness-rating" id="cleanliness-rating">
+              <label>
+                <input type="radio" name="cleanStars" value="1" />
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="cleanStars" value="2" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="cleanStars" value="3" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="cleanStars" value="4" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input type="radio" name="cleanStars" value="5" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+            </div>
+
+            <label>Available Amenities:</label>
+            <div class="checkbox-group">
+              <label
+                ><input
+                  type="checkbox"
+                  name="amenities"
+                  value="Restrooms"
+                />Restrooms</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="amenities"
+                  value="Souvenir Shop"
+                />Souvenir Shop</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="amenities"
+                  value="Tour Guides"
+                />Tour Guides</label
+              >
+            </div>
+
+            <label for="suggestions">Suggestions:</label>
+            <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+          </div>
+          <div class="submit-container">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../scripts/fieldtripForm.js"></script>
+  </body>
+</html>

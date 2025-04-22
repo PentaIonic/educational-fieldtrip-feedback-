@@ -1,0 +1,259 @@
+main {
+  display: block;
+  font-family: Arial, sans-serif;
+  background: #e8e8ff;
+  padding: 20px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 30px;
+  color: var(--text-color-Dark);
+  background-image: url(../assets/images/Laguna\ Lake\ lookout_1_0.png);
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 770px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info {
+  background: var(--accent-color);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.destination {
+  background: var(--accent-color);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.learnings {
+  background: var(--accent-color);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.experience {
+  background: var(--accent-color);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+.student-info:hover, .destination:hover, .learnings:hover, .experience:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-container input:focus, 
+.form-container select:focus, 
+.form-container textarea:focus {
+  border: 4px solid var(--accent-color-Dark);
+  outline: none;
+}
+
+.form-container h1,
+.form-container h2,
+.form-container h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+ resize: none;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.educational-rating {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+}
+
+.educational-rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.educational-rating label:last-child {
+  position: static;
+}
+
+.educational-rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.educational-rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.educational-rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.educational-rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.educational-rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.educational-rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.educational-rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.educational-rating label:last-child .icon {
+  color: #000000;
+}
+
+.educational-rating:not(:hover) label input:checked ~ .icon,
+.educational-rating:hover label:hover input ~ .icon {
+  color: gold;
+}
+
+.educational-rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000000;
+  text-shadow: 0 0 5px #09f;
+}
+
+.cleanliness-rating {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+}
+
+.cleanliness-rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.cleanliness-rating label:last-child {
+  position: static;
+}
+
+.cleanliness-rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.cleanliness-rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.cleanliness-rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.cleanliness-rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.cleanliness-rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.cleanliness-rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.cleanliness-rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.cleanliness-rating label:last-child .icon {
+  color: #000000;
+}
+
+.cleanliness-rating:not(:hover) label input:checked ~ .icon,
+.cleanliness-rating:hover label:hover input ~ .icon {
+  color: gold;
+}
+
+.cleanliness-rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000000;
+  text-shadow: 0 0 5px #09f;
+}
+
+.submit-container {
+  padding: 20px;
+}
+
+.form-container button {
+  background-color: dimgray;
+  color: white;
+  border: 2px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
