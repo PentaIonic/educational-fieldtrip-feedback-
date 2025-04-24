@@ -18,6 +18,32 @@
     <link rel="stylesheet" href="../styles/components/prompt-message.css" />
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/fieldtripForm.css" />
+   
+    <style>
+      .icon {
+        margin-right: 5px; 
+        font-size: 30px; 
+      }
+    </style>
+
+    
+<style>
+  .submit-container button {
+    padding: 10px 20px; 
+    background-color: #4c7aaf; 
+    color: white; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+
+  .submit-container button:hover {
+    background-color: #2f5577; 
+  }
+</style>
+
 
     <!-- Web Page Information-->
     <title>Educational Fieldtrip Feedback</title>
@@ -129,11 +155,11 @@
             <input type="text" id="favorite" name="favorite" />
             <label for="learned">What did you learn from the trip?</label>
             <textarea id="learned" name="learned" rows="4"></textarea>
+            <label>Rate Educational Value:</label>
             <label
               >Rate Educational Value<span style="color: red"
                 ><b>*</b></span
-              ></label
-            >
+              ></label>
             <div class="educational-rating" id="educational-rating">
               <label>
                 <input type="radio" name="educStars" value="1" required />
@@ -167,6 +193,8 @@
               </label>
             </div>
           </div>
+
+
           <!-- Tourist Spot Feedback Section -->
           <div class="experience">
             <h4>TOURIST SPOT FEEDBACK</h4>
