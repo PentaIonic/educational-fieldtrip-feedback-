@@ -18,13 +18,20 @@
   }
 }
 
+.header-container,
+.main-panel-tabs,
+.sidebar-button {
+  transition: all 0.3s ease-in-out;
+}
+
 .header-container {
   display: flex;
-  height: 100%;
+  height: 5em;
   width: 100%;
   align-items: start;
   box-sizing: border-box;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .logo-area {
@@ -57,13 +64,18 @@
   margin-bottom: auto;
   justify-content: space-evenly;
   align-items: center;
+  box-sizing: border-box;
 }
 
-.main-panel-tabs button {
+.dropSurveyBtn,
+.dropRecordsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   width: 200px;
-  height: 4em;
+  height: 3em;
   text-decoration: none;
   color: var(--text-color);
   font-family: "Poppins", serif;
@@ -72,6 +84,22 @@
   font-style: normal;
   cursor: pointer;
   box-sizing: border-box;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.dropSurveyBtn:hover,
+.dropRecordsBtn:hover {
+  background-color: var(--secondary-color);
+  border-bottom: none;
+  box-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
+}
+
+.dropRecordsBtn:hover {
+  border-radius: 0px 4px 0px 0px;
+}
+
+.dropSurveyBtn:hover {
+  border-radius: 4px 0px 0px 0px;
 }
 
 .sidebar-button {
@@ -84,15 +112,8 @@
   cursor: pointer;
 }
 
-.dropdown-survey-content, .dropdown-records-content {
-  display: none;
-  position: absolute;
-  background-color: var(--accent-color);
-  width: 200px;
-  z-index: 1;
-}
-
-.dropdown-survey-content a, .dropdown-records-content a {
+.dropdown-survey-content a,
+.dropdown-records-content a {
   font-family: "Poppins", serif;
   font-weight: bold;
   color: var(--text-color);
@@ -101,10 +122,32 @@
   display: block;
 }
 
-.dropdown-survey:hover .dropdown-survey-content {
+.dropdown-survey-content,
+.dropdown-records-content {
+  position: absolute;
+  width: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  box-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
+  background-color: var(--accent-color);
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
   display: block;
+  height: auto;
+  border-radius: 4px;
+  visibility: hidden;
 }
 
+.dropdown-survey-content a:hover,
+.dropdown-records-content a:hover {
+  background-color: var(--secondary-color);
+}
+
+.dropdown-survey:hover .dropdown-survey-content,
 .dropdown-records:hover .dropdown-records-content {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
 }

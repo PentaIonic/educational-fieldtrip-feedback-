@@ -1,59 +1,59 @@
 :root {
-    --primary-color: #78c0e0;
-    --primary-color-Dark: #150578;
-    --secondary-color: #192bc2;
-    --secondary-color-Dark: #0f1a7a;
-    --accent-color: #66abd3;
-    --accent-color-Dark: #0e0e52;
-    --text-color: #000000;
-    --text-color-Hover: #FFFFFF;
-    --text-color-Dark: #FFFFFF;
-    --text-color-Dark-Hover: #000000;
-    --background-color: #f8f9fa;
-    --background-color-Dark: #343a40;
+  --primary-color: #78c0e0;
+  --primary-color-Dark: #150578;
+  --secondary-color: #503606;
+  --secondary-color-Dark: #0f1a7a;
+  --accent-color: #6b5f1cfa;
+  --accent-color-Dark: #0e0e52;
+  --text-color: #eaf1ee;
+  --text-color-Hover: #383838;
+  --text-color-Dark: #383838;
+  --text-color-Dark-Hover: #eaf1ee;
+  --background-color: #f8f9fa;
+  --background-color-Dark: #343a40;
 
-    --palette-1: #78c0e0;
-    --palette-2: #449dd1;
-    --palette-3: #192bc2;
-    --palette-4: #150578;
-    --palette-5: #0e0e52;
+  --palette-1: #78c0e0;
+  --palette-2: #449dd1;
+  --palette-3: #192bc2;
+  --palette-4: #150578;
+  --palette-5: #0e0e52;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 5em minmax(100vh, fit-content) minmax(20em, 100%) 5em;
-    grid-template-areas: 
-     'header'
-     'main'
-     'footer';
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5em minmax(100vh, fit-content) minmax(20em, 100%) 5em;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: var(--accent-color);
-    grid-area: header;
-    box-sizing: border-box;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--accent-color);
+  grid-area: header;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 main {
-    grid-area: main;
-    display: flex;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  grid-area: main;
+  display: flex;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: var(--accent-color);
-    grid-area: footer;
+  background-color: var(--accent-color);
+  grid-area: footer;
 }

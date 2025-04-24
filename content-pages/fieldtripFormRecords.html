@@ -16,10 +16,11 @@
     <!-- Local Styles -->
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/header.css" />
+    <link rel="stylesheet" href="../styles/components/sidebar.css">
     <link rel="stylesheet" href="../styles/fieldtripFormRecords.css" />
 
     <!-- Page Tab -->
-    <title>Fieldtrip Feedback</title>
+    <title>Fieldtrip Feedback Records</title>
     <link
       rel="icon"
       href="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
@@ -35,20 +36,20 @@
             src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
             alt="Seal of Department of Education"
           />
-          <label for="logo-name">Educational Tours Inc.</label>
+          <label for="logo-name">Biyaheng Lira</label>
         </div>
         <div class="main-panel-tabs">
           <div class="dropdown-survey">
-            <button class="dropSurveyBtn">Surveys</button>
+            <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
-              <a href="#">CoVID 19 Survey</a>
+              <a href="./healthForm.html">CoVID 19 Survey</a>
               <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
           </div>
           <div class="dropdown-records">
-            <button class="dropRecordsBtn">Records</button>
+            <div class="dropRecordsBtn">Records</div>
             <div class="dropdown-records-content">
-              <a href="#">Health Records</a>
+              <a href="./healthFormRecords.html">Health Records</a>
               <a href="#">Feedback Records</a>
             </div>
           </div>
@@ -97,7 +98,46 @@
         </table>
       </div>
     </main>
+    <!-- Sidebar -->
+    <div class="right-sidebar" id="sidebarBody">
+      <div class="right-container">
+        <div class="top-sidebar">
+          <div class="close-button">
+            <a onclick="moveSidebar()">&times;</a>
+          </div>
+          <div class="sidepanel-tabs">
+            <div class="surveyTabs">
+              <a href="./content-pages/healthForm.html">CoVID 19 Survey</a>
+              <a href="./content-pages/fieldtripForm.html"
+                >Fieldtrip Feedback</a
+              >
+            </div>
+            <div class="recordTabs">
+              <a href="./content-pages/healthFormRecords.html"
+                >Health Records</a
+              >
+              <a href="./content-pages/fieldtripFormRecords.html"
+                >Feedback Records</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bottom-sidebar">
+          <div class="logo-sidebar">
+            <div class="logo-section-1">
+              <img
+                src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+                alt="Seal of Department of Education"
+              />
+              <label for="logo-name">Biyaheng Lira</label>
+            </div>
+            <label class="trademark">Created @ 2025</label>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer></footer>
+    <script src="../scripts/components/sidebar.js"></script>
     <script src="../scripts/fieldtripFormRecords.js"></script>
   </body>
 </html>
