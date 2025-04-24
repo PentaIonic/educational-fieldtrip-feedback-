@@ -14,9 +14,9 @@
     />
 
     <!-- Local Styles -->
-    <link rel="stylesheet" href="../styles/components/webFrame.css">
+    <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/header.css" />
-    <link rel="stylesheet" href="../styles/fieldtripFormRecords.css">
+    <link rel="stylesheet" href="../styles/fieldtripFormRecords.css" />
 
     <!-- Page Tab -->
     <title>Fieldtrip Feedback</title>
@@ -29,57 +29,73 @@
   <body>
     <!-- Top Navigation Bar -->
     <header>
-        <div class="header-container">
-          <div class="logo-area">
-            <img
-              src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
-              alt="Seal of Department of Education"
-            />
-            <label for="logo-name">Educational Tours Inc.</label>
-          </div>
-          <div class="main-panel-tabs">
-            <div class="dropdown-survey">
-              <button class="dropSurveyBtn">Surveys</button>
-              <div class="dropdown-survey-content">
-                <a href="#">CoVID 19 Survey</a>
-                <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
-              </div>
-            </div>
-            <div class="dropdown-records">
-              <button class="dropRecordsBtn">Records</button>
-              <div class="dropdown-records-content">
-                <a href="#">Health Records</a>
-                <a href="#">Feedback Records</a>
-              </div>
+      <div class="header-container">
+        <div class="logo-area">
+          <img
+            src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+            alt="Seal of Department of Education"
+          />
+          <label for="logo-name">Educational Tours Inc.</label>
+        </div>
+        <div class="main-panel-tabs">
+          <div class="dropdown-survey">
+            <button class="dropSurveyBtn">Surveys</button>
+            <div class="dropdown-survey-content">
+              <a href="#">CoVID 19 Survey</a>
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
           </div>
-          <div class="sidebar-button" onclick="moveSidebar()" id="sidebarButton">
-            <img src="../assets/icons/menu-icon.svg" alt="Sidebar" />
+          <div class="dropdown-records">
+            <button class="dropRecordsBtn">Records</button>
+            <div class="dropdown-records-content">
+              <a href="#">Health Records</a>
+              <a href="#">Feedback Records</a>
+            </div>
           </div>
         </div>
-      </header>
+        <div class="sidebar-button" onclick="moveSidebar()" id="sidebarButton">
+          <img src="../assets/icons/menu-icon.svg" alt="Sidebar" />
+        </div>
+      </div>
+    </header>
     <main>
-        <!-- Table View -->
-        <div class="table-container">
-            <table id="feedbackDataResults" class="feedbackRecordsTable">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Grade Level</th>
-                        <th>Destination</th>
-                        <th>Date of Visit</th>
-                        <th>Favorite</th>
-                        <th>Educational</th>
-                        <th>Tourism Feedback</th>
-                        <th>Cleanliness</th>
-                        <th>Amenities</th>
-                        <th>Suggestion</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+      <!-- Window Description -->
+      <div class="textareaWindow" id="textAreaWindow">
+        <div class="textareaWindow-container">
+          <div class="dialog-box">
+            <div class="textareaWindow-header" onclick="closeContentWindow()">
+              <span>&times;</span>
+            </div>
+            <textarea
+              name="textareaWindow-content"
+              id="content"
+              rows="30"
+            ></textarea>
+          </div>
         </div>
+      </div>
+      <!-- Table View -->
+      <div class="table-container">
+        <table id="feedbackDataResults" class="feedbackRecordsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Grade Level</th>
+              <th>Destination</th>
+              <th>Date of Visit</th>
+              <th>Favorite Spot</th>
+              <th>Educational Feedback</th>
+              <th>Tourism Feedback</th>
+              <th>Cleanliness</th>
+              <th>Amenities</th>
+              <th>Suggestion</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </main>
     <footer></footer>
     <script src="../scripts/fieldtripFormRecords.js"></script>
