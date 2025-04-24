@@ -1,0 +1,117 @@
+@media screen and (max-width: 1023px) {
+  .main-panel-tabs {
+    display: none;
+  }
+
+  .sidebar-button {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-panel-tabs {
+    display: flex;
+  }
+
+  .sidebar-button {
+    display: none;
+  }
+}
+
+.header-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: start;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 350px;
+  gap: 16px;
+}
+
+.logo-area img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-area label {
+  color: var(--text-color);
+  font-size: 1em;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.main-panel-tabs {
+  height: 100%;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dropSurveyBtn,
+.dropRecordsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  width: 200px;
+  height: 4em;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "Poppins", serif;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.sidebar-button {
+  margin: auto 0 auto auto;
+  padding: 0;
+  height: auto;
+  width: auto;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-survey-content,
+.dropdown-records-content {
+  display: none;
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 200px;
+  z-index: 1;
+}
+
+.dropdown-survey-content a,
+.dropdown-records-content a {
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-survey:hover .dropdown-survey-content {
+  display: block;
+}
+
+.dropdown-records:hover .dropdown-records-content {
+  display: block;
+}

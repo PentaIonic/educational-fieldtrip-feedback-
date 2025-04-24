@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- Local Styles -->
     <link rel="stylesheet" href="../styles/components/header.css" />
-    <link rel="stylesheet" href="../styles/components/prompt-message.css">
+    <link rel="stylesheet" href="../styles/components/prompt-message.css" />
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/fieldtripForm.css" />
    
@@ -76,7 +76,7 @@
             <button class="dropRecordsBtn">Records</button>
             <div class="dropdown-records-content">
               <a href="#">Health Records</a>
-              <a href="#">Feedback Records</a>
+              <a href="./fieldtripFormRecords.html">Feedback Records</a>
             </div>
           </div>
         </div>
@@ -98,11 +98,21 @@
           <!-- Student Information Section -->
           <div class="student-info">
             <h4>STUDENT INFO</h4>
-            <label for="name">Name<span style="color: red"><b>*</b></span></label>
-            <input type="text" id="name" name="name" placeholder="Name" required/>
-            <label for="grade">Grade<span style="color: red"><b>*</b></span></label>
+            <label for="name"
+              >Name<span style="color: red"><b>*</b></span></label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <label for="grade"
+              >Grade<span style="color: red"><b>*</b></span></label
+            >
             <select id="grade" name="grade" required>
-              <option value="" selected disabled>Select Grade</option>   
+              <option value="" selected disabled>Select Grade</option>
               <option value="Grade 7-A">Grade 7-A</option>
               <option value="Grade 7-B">Grade 7-B</option>
               <option value="Grade 8-A">Grade 8-A</option>
@@ -111,12 +121,20 @@
               <option value="Grade 9-B">Grade 9-B</option>
               <option value="Grade 10-A">Grade 10-A</option>
               <option value="Grade 10-B">Grade 10-B</option>
+              <option value="Grade 11-A">Grade 11-A</option>
+              <option value="Grade 11-B">Grade 11-B</option>
+              <option value="Grade 11-C">Grade 11-C</option>
+              <option value="Grade 12-A">Grade 12-A</option>
+              <option value="Grade 12-B">Grade 12-B</option>
+              <option value="Grade 12-C">Grade 12-C</option>
             </select>
           </div>
           <!-- Destination Details Section -->
           <div class="destination">
             <h4>DESTINATION DETAILS</h4>
-            <label for="destination">Destination<span style="color: red"><b>*</b></span></label>
+            <label for="destination"
+              >Destination<span style="color: red"><b>*</b></span></label
+            >
             <select id="destination" name="destination" required>
               <option value="" selected disabled>Select Destination</option>
               <option value="The Mind Museum">The Mind Museum</option>
@@ -125,8 +143,10 @@
               <option value="La Mesa Eco Park">La Mesa Eco Park</option>
             </select>
 
-            <label for="visit-date">Date of Visit<span style="color: red"><b>*</b></span></label>
-            <input type="date" id="visit-date" name="visit-date" required/>
+            <label for="visit-date"
+              >Date of Visit<span style="color: red"><b>*</b></span></label
+            >
+            <input type="date" id="visit-date" name="visit-date" required />
           </div>
           <!-- Educational Feedback Section -->
           <div class="learnings">
@@ -136,36 +156,40 @@
             <label for="learned">What did you learn from the trip?</label>
             <textarea id="learned" name="learned" rows="4"></textarea>
             <label>Rate Educational Value:</label>
+            <label
+              >Rate Educational Value<span style="color: red"
+                ><b>*</b></span
+              ></label>
             <div class="educational-rating" id="educational-rating">
               <label>
-                <input type="radio" name="educStars" value="1" required/>
-                <span class="icon">★</span>
+                <input type="radio" name="educStars" value="1" required />
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="educStars" value="2" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="educStars" value="3" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="educStars" value="4" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="educStars" value="5" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
             </div>
           </div>
@@ -174,37 +198,39 @@
           <!-- Tourist Spot Feedback Section -->
           <div class="experience">
             <h4>TOURIST SPOT FEEDBACK</h4>
-            <label>Rate Cleanliness<span style="color: red"><b>*</b></span></label>
+            <label
+              >Rate Cleanliness<span style="color: red"><b>*</b></span></label
+            >
             <div class="cleanliness-rating" id="cleanliness-rating">
               <label>
-                <input type="radio" name="cleanStars" value="1" required/>
-                <span class="icon">★</span>
+                <input type="radio" name="cleanStars" value="1" required />
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="cleanStars" value="2" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="cleanStars" value="3" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="cleanStars" value="4" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
               <label>
                 <input type="radio" name="cleanStars" value="5" />
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
-                <span class="icon">★</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
+                <span class="icon">&#9734;</span>
               </label>
             </div>
 
