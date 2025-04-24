@@ -1,14 +1,14 @@
 :root {
     --primary-color: #78c0e0;
     --primary-color-Dark: #150578;
-    --secondary-color: #192bc2;
+    --secondary-color: #503606 ;
     --secondary-color-Dark: #0f1a7a;
-    --accent-color: #66abd3;
+    --accent-color: #6b5f1cfa;
     --accent-color-Dark: #0e0e52;
-    --text-color: #000000;
-    --text-color-Hover: #FFFFFF;
-    --text-color-Dark: #FFFFFF;
-    --text-color-Dark-Hover: #000000;
+    --text-color: #eaf1ee;
+    --text-color-Hover: #383838;
+    --text-color-Dark: #383838;
+    --text-color-Dark-Hover: #eaf1ee;
     --background-color: #f8f9fa;
     --background-color-Dark: #343a40;
 
