@@ -37,6 +37,14 @@
     justify-content: space-evenly;
 }
 
+.prompt-button {
+    font-family: "Poppins", serif;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .prompt-button.Close {
     padding: 10px 40px;
     font-family: "Poppins", serif;

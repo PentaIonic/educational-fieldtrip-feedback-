@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../styles/components/header.css" />
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/sidebar.css" />
+    <link rel="stylesheet" href="../styles/components/prompt-message.css">
+    <link rel="stylesheet" href="../styles/healthForm.css" />
 
     <!-- Web Page Information-->
     <title>Health Form</title>
@@ -42,20 +44,14 @@
             <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
               <a href="#">CoVID 19 Survey</a>
-              <a href="./fieldtripForm.html"
-                >Fieldtrip Feedback</a
-              >
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
           </div>
           <div class="dropdown-records">
             <div class="dropRecordsBtn">Records</div>
             <div class="dropdown-records-content">
-              <a href="./healthFormRecords.html"
-                >Health Records</a
-              >
-              <a href="./fieldtripFormRecords.html"
-                >Feedback Records</a
-              >
+              <a href="./healthFormRecords.html">Health Records</a>
+              <a href="./fieldtripFormRecords.html">Feedback Records</a>
             </div>
           </div>
         </div>
@@ -64,7 +60,224 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="form-box">
+        <form id="healthForm">
+          <h2>Personal Information</h2>
+          <hr />
+          <div class="form-content-box first">
+            <div class="form-content-section1-box first">
+              <label for="fullName"
+                ><b>Full Name <span style="color: red">*</span></b></label
+              >
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <label for="age"
+                ><b>Age <span style="color: red">*</span></b></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Age"
+                required
+              />
+            </div>
+
+            <div class="form-content-section1-box second">
+              <label for="gender"
+                ><b>Gender <span style="color: red">*</span></b></label
+              ><br />
+              <div class="list-row">
+                <input type="radio" name="gender" id="gender1" value="Male" />
+                <label for="genderMale">Male</label>
+              </div>
+              <div class="list-row">
+                <input type="radio" name="gender" value="Female" />
+                <label for="genderFemale">Female</label>
+              </div>
+              <div class="list-row">
+                <input type="radio" name="gender" value="Other" />
+                <label for="genderOther">Other</label>
+              </div>
+              <input
+                type="text"
+                name="otherGender"
+                id="otherGender"
+                class="otherGenderTextField"
+                placeholder="Please Specify"
+                readonly
+              />
+            </div>
+
+            <div class="form-content-section1-box third">
+              <label for="address"
+                ><b>Barangay <span style="color: red">*</span></b></label
+              ><br />
+              <select name="address" id="address" required>
+                <option
+                  value="addressDefault"
+                  selected
+                  disabled
+                  style="color: gray"
+                >
+                  Address
+                </option>
+                <option value="Balite">Balite</option>
+                <option value="Burgos">Burgos</option>
+                <option value="Geronimo">Geronimo</option>
+                <option value="Macabud">Macabud</option>
+                <option value="Manggahan">Manggahan</option>
+                <option value="Mascap">Mascap</option>
+                <option value="Puray">Puray</option>
+                <option value="Rosario">Rosario</option>
+                <option value="San Isidro">San Isidro</option>
+                <option value="San Jose">San Jose</option>
+                <option value="San Rafael">San Rafael</option>
+              </select>
+            </div>
+          </div>
+
+          <h2>Health Status</h2>
+          <hr />
+          <div class="form-content-box second">
+            <div class="form-content-section2-box first">
+              <label for="vaccineStatus"
+                ><b
+                  >Vaccination Status <span style="color: red">*</span></b
+                ></label
+              >
+              <select name="vaccineStatus" id="vaccineStatus" required>
+                <option
+                  value="statusDefault"
+                  selected
+                  disabled
+                  style="color: gray"
+                >
+                  Status
+                </option>
+                <option value="Vaccinated">Vaccinated</option>
+                <option value="Unvaccinated">Unvaccinated</option>
+              </select>
+            </div>
+
+            <div class="form-content-section2-box second">
+              <label for="recentSymptoms"><b>Recent Symptoms</b></label
+              ><br />
+              <div class="list-row">
+                <input type="checkbox" name="symptom" value="Fever" />
+                <label for="symptom1">Fever</label>
+              </div>
+              <div class="list-row">
+                <input type="checkbox" name="symptom" value="Cough" />
+                <label for="symptom2">Cough</label>
+              </div>
+              <div class="list-row">
+                <input type="checkbox" name="symptom" value="Fatigue" />
+                <label for="symptom3">Fatigue</label>
+              </div>
+            </div>
+
+            <div class="form-content-section2-box third">
+              <label for="lastMedicalCheckupDate"
+                ><b
+                  >Last Medical Checkup <span style="color: red">*</span></b
+                ></label
+              >
+              <input
+                type="date"
+                name="lastMedicalCheckupDate"
+                id="lastMedCheckup"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-content-box third">
+            <div class="form-content-section2-box fourth">
+              <label for="healthNotes"><b>Additional Health Notes</b></label>
+              <textarea name="healthNotes" id="healthNotes"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-content-box fourth">
+            <input
+              type="button"
+              value="Submit"
+              id="submitBtn"
+              class="submit-btn"
+              onclick="displayPrompt()"
+            />
+          </div>
+          <!-- Prompt Messages -->
+          <div class="prompt-message" id="promptMessage">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p>Are you sure with the details?</p>
+                  <div class="prompt-button-container">
+                    <input
+                      type="submit"
+                      value="Yes"
+                      id="yesButton"
+                      class="prompt-button yes"
+                      onclick="promptMessage.style.display='none'"
+                    />
+                    <input
+                      type="button"
+                      value="No"
+                      id="noButton"
+                      class="prompt-button no"
+                      onclick="promptMessage.style.display='none'"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prompt-success" id="promptSuccess">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p id="prompt-text">
+                    "Thank you for participating in the survey!"
+                  </p>
+                  <input
+                    type="button"
+                    value="Close"
+                    class="prompt-button Close"
+                    onclick="promptSuccess.style.display='none'"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prompt-denied" id="promptDenied">
+            <div class="prompt-container">
+              <div class="dialog-box">
+                <div class="dialog-content">
+                  <p id="prompt-text">
+                    "Form cannot be submitted, there are invalid fields."
+                  </p>
+                  <input
+                    type="button"
+                    value="Close"
+                    class="prompt-button Close"
+                    onclick="promptDenied.style.display='none'"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
     <!-- Sidebar -->
     <div class="right-sidebar" id="sidebarBody">
       <div class="right-container">
@@ -75,17 +288,11 @@
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
               <a href="#">CoVID 19 Survey</a>
-              <a href="./fieldtripForm.html"
-                >Fieldtrip Feedback</a
-              >
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
             <div class="recordTabs">
-              <a href="./healthFormRecords.html"
-                >Health Records</a
-              >
-              <a href="./fieldtripFormRecords.html"
-                >Feedback Records</a
-              >
+              <a href="./healthFormRecords.html">Health Records</a>
+              <a href="./fieldtripFormRecords.html">Feedback Records</a>
             </div>
           </div>
         </div>
@@ -104,6 +311,7 @@
       </div>
     </div>
     <footer></footer>
+    <script src="../scripts/healthForm.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
   </body>
 </html>

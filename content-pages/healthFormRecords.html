@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../styles/components/header.css" />
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/sidebar.css" />
+    <link rel="stylesheet" href="../styles/healthFormRecords.css">
 
     <!-- Web Page Information-->
     <title>Health Form Records</title>
@@ -42,20 +43,14 @@
             <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
               <a href="./healthForm.html">CoVID 19 Survey</a>
-              <a href="./fieldtripForm.html"
-                >Fieldtrip Feedback</a
-              >
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
           </div>
           <div class="dropdown-records">
             <div class="dropRecordsBtn">Records</div>
             <div class="dropdown-records-content">
-              <a href="#"
-                >Health Records</a
-              >
-              <a href="./fieldtripFormRecords.html"
-                >Feedback Records</a
-              >
+              <a href="#">Health Records</a>
+              <a href="./fieldtripFormRecords.html">Feedback Records</a>
             </div>
           </div>
         </div>
@@ -64,7 +59,47 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- Window Description -->
+      <div class="textareaWindow" id="textAreaWindow">
+        <div class="textareaWindow-container">
+          <div class="dialog-box">
+            <div class="textareaWindow-header" onclick="closeContentWindow()">
+              <span>&times;</span>
+            </div>
+            <textarea
+              name="textareaWindow-content"
+              id="content"
+              rows="30"
+              readonly
+              disabled
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- Table View -->
+      <div class="table-container">
+        <div class="horz-scroll">
+          <table id="healthDataResults" class="healthRecordsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Region</th>
+                <th>Vaccine Status</th>
+                <th>Symptoms</th>
+                <th>Last Medical Check-up Date</th>
+                <th>Health Notes</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
     <!-- Sidebar -->
     <div class="right-sidebar" id="sidebarBody">
       <div class="right-container">
@@ -75,17 +110,11 @@
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
               <a href="./healthForm.html">CoVID 19 Survey</a>
-              <a href="./fieldtripForm.html"
-                >Fieldtrip Feedback</a
-              >
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
             <div class="recordTabs">
-              <a href="#"
-                >Health Records</a
-              >
-              <a href="./fieldtripFormRecords.html"
-                >Feedback Records</a
-              >
+              <a href="#">Health Records</a>
+              <a href="./fieldtripFormRecords.html">Feedback Records</a>
             </div>
           </div>
         </div>
@@ -104,6 +133,7 @@
       </div>
     </div>
     <footer></footer>
+    <script src="../scripts/healthFormRecords.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
   </body>
 </html>
