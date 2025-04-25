@@ -48,9 +48,9 @@ function confirmSubmission() {
   const formData = new FormData(healthForm);
 
   let gender = formData.get("gender");
-  if (gender === "Other") {
-    const custom = formData.get("otherGender").trim();
-    gender = custom ? `Other: ${custom}` : "Other";
+  if (gender === 'Other') {
+    const custom = formData.get('otherGender').trim();
+    gender = custom ? `Other: ${custom}` : 'Other';
   }
 
   const symptom = [];
