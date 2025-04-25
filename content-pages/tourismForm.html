@@ -18,16 +18,12 @@
     <link rel="stylesheet" href="../styles/components/prompt-message.css" />
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/sidebar.css" />
-    <link rel="stylesheet" href="../styles/components/footer.css">
-    <link rel="stylesheet" href="../styles/fieldtripForm.css" />
+    <link rel="stylesheet" href="../styles/components/footer.css" />
+    <link rel="stylesheet" href="../styles/toursimForm.css" />
 
     <!-- Web Page Information-->
     <title>Tourism Feedback</title>
-    <link
-      rel="icon"
-      href="../assets/icons/city-seal.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
   </head>
   <body>
     <!-- Top Navigation Bar -->
@@ -65,15 +61,15 @@
     <main>
       <!-- CSS Frame of Form -->
       <div class="form-container">
-        <form action="" id="fieldtripSurvey">
+        <form action="" id="tourismSurvey">
           <!-- Form Background Header -->
           <div class="form-header">
-            <h1>Educational Fieldtrip</h1>
+            <h1>Tourism Services Survey</h1>
             <h2>Feedback Form</h2>
           </div>
           <!-- Student Information Section -->
-          <div class="student-info">
-            <h4>STUDENT INFO</h4>
+          <div class="personal-info">
+            <h4>PERSONAL INFO</h4>
             <label for="name"
               >Name<span style="color: red"><b>*</b></span></label
             >
@@ -84,25 +80,13 @@
               placeholder="Name"
               required
             />
-            <label for="grade"
-              >Grade<span style="color: red"><b>*</b></span></label
+            <label for="nationality"
+              >Nationality<span style="color: red"><b>*</b></span></label
             >
-            <select id="grade" name="grade" required>
-              <option value="" selected disabled>Select Grade</option>
-              <option value="Grade 7-A">Grade 7-A</option>
-              <option value="Grade 7-B">Grade 7-B</option>
-              <option value="Grade 8-A">Grade 8-A</option>
-              <option value="Grade 8-B">Grade 8-B</option>
-              <option value="Grade 9-A">Grade 9-A</option>
-              <option value="Grade 9-B">Grade 9-B</option>
-              <option value="Grade 10-A">Grade 10-A</option>
-              <option value="Grade 10-B">Grade 10-B</option>
-              <option value="Grade 11-A">Grade 11-A</option>
-              <option value="Grade 11-B">Grade 11-B</option>
-              <option value="Grade 11-C">Grade 11-C</option>
-              <option value="Grade 12-A">Grade 12-A</option>
-              <option value="Grade 12-B">Grade 12-B</option>
-              <option value="Grade 12-C">Grade 12-C</option>
+            <select id="nationality" name="nationality" required>
+              <option value="" selected disabled>Select Nationality</option>
+              <option value="Local">Local</option>
+              <option value="Foreign">Foreign</option>
             </select>
           </div>
           <!-- Destination Details Section -->
@@ -113,62 +97,20 @@
             >
             <select id="destination" name="destination" required>
               <option value="" selected disabled>Select Destination</option>
-              <option value="The Mind Museum">The Mind Museum</option>
-              <option value="Rizal Park Hotel">Rizal Park Hotel</option>
-              <option value="Art in Island">Art in Island</option>
-              <option value="La Mesa Eco Park">La Mesa Eco Park</option>
+              <option value="Rizal's Tallest Monument">Rizal's Tallest Monument</option>
+              <option value="Giant Claypot">Giant Claypot</option>
+              <option value="St. John the Baptist Church">St. John the Baptist Church</option>
+              <option value="Rockpoint">Rockpoint</option>
+              <option value="Petty John Studio">Petty John Studio</option>
+              <option value="Laguna Hot Springs">Laguna Hot Springs</option>
+              <option value="Lake Caliraya">Lake Caliraya</option>
+              <option value="Mt. Makiling">Mt. Makiling</option>
             </select>
 
             <label for="visit-date"
               >Date of Visit<span style="color: red"><b>*</b></span></label
             >
             <input type="date" id="visit-date" name="visit-date" required />
-          </div>
-          <!-- Educational Feedback Section -->
-          <div class="learnings">
-            <h4>LEARNING FEEDBACK</h4>
-            <label for="favorite">Favorite Part of the Visit</label>
-            <input type="text" id="favorite" name="favorite" />
-            <label for="learned">What did you learn from the trip?</label>
-            <textarea id="learned" name="learned" rows="4"></textarea>
-            <label>Rate Educational Value:</label>
-            <label
-              >Rate Educational Value<span style="color: red"
-                ><b>*</b></span
-              ></label
-            >
-            <div class="educational-rating" id="educational-rating">
-              <label>
-                <input type="radio" name="educStars" value="1" required />
-                <span class="icon">&#9734;</span>
-              </label>
-              <label>
-                <input type="radio" name="educStars" value="2" />
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-              </label>
-              <label>
-                <input type="radio" name="educStars" value="3" />
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-              </label>
-              <label>
-                <input type="radio" name="educStars" value="4" />
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-              </label>
-              <label>
-                <input type="radio" name="educStars" value="5" />
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-                <span class="icon">&#9734;</span>
-              </label>
-            </div>
           </div>
 
           <!-- Tourist Spot Feedback Section -->

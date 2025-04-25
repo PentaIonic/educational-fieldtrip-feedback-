@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles/index/headerIndex.css" />
     <link rel="stylesheet" href="./styles/index/webFrameIndex.css" />
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
-    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/index/footerIndex.css" />
     <link rel="stylesheet" href="./styles/index/index.css" />
 
     <!-- Web Page Information-->
@@ -44,8 +44,8 @@
             <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
               <a href="./content-pages/healthForm.html">Health Survey</a>
-              <a href="./content-pages/fieldtripForm.html"
-                >Tourism Feedback</a
+              <a href="./content-pages/tourismForm.html"
+                >Tourism Survey</a
               >
             </div>
           </div>
@@ -55,8 +55,8 @@
               <a href="./content-pages/healthFormRecords.html"
                 >Health Records</a
               >
-              <a href="./content-pages/fieldtripFormRecords.html"
-                >Tour Feedback Records</a
+              <a href="./content-pages/tourismFormRecords.html"
+                >Tourism Feedback Records</a
               >
             </div>
           </div>
@@ -83,12 +83,12 @@
       <div class="section-2">
         <label for="header" class="section-header">Surveys</label>
         <div class="cards">
-          <div class="survey-card">
+          <div class="survey-card" onclick="window.location.href = './content-pages/healthForm.html'">
             <img src="./assets/icons/healthForm-Light.svg" alt="Health Form" />
             <label for="healthForm">Health Form</label>
           </div>
-          <div class="survey-card">
-            <img src="./assets/icons/tourForm-Light.svg" alt="Health Form" />
+          <div class="survey-card" onclick="window.location.href = './content-pages/tourismForm.html'">
+            <img src="./assets/icons/tourForm-Light.svg" alt="Tourism Form" />
             <label for="healthForm">Tourism Feedback</label>
           </div>
         </div>
@@ -104,7 +104,7 @@
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
               <a href="./content-pages/healthForm.html">Health Survey</a>
-              <a href="./content-pages/fieldtripForm.html"
+              <a href="./content-pages/tourismForm.html"
                 >Tourism Feedback</a
               >
             </div>
@@ -112,7 +112,7 @@
               <a href="./content-pages/healthFormRecords.html"
                 >Health Records</a
               >
-              <a href="./content-pages/fieldtripFormRecords.html"
+              <a href="./content-pages/tourismFormRecords.html"
                 >Tourism Feedback Records</a
               >
             </div>
