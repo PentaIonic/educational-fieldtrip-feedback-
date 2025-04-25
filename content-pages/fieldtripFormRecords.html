@@ -16,7 +16,7 @@
     <!-- Local Styles -->
     <link rel="stylesheet" href="../styles/components/webFrame.css" />
     <link rel="stylesheet" href="../styles/components/header.css" />
-    <link rel="stylesheet" href="../styles/components/sidebar.css">
+    <link rel="stylesheet" href="../styles/components/sidebar.css" />
     <link rel="stylesheet" href="../styles/fieldtripFormRecords.css" />
 
     <!-- Page Tab -->
@@ -79,25 +79,27 @@
       </div>
       <!-- Table View -->
       <div class="table-container">
-        <table id="feedbackDataResults" class="feedbackRecordsTable">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Grade Level</th>
-              <th>Destination</th>
-              <th>Date of Visit</th>
-              <th>Favorite Spot</th>
-              <th>Educational Feedback</th>
-              <th>Tourism Feedback</th>
-              <th>Cleanliness</th>
-              <th>Amenities</th>
-              <th>Suggestion</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="horz-scroll">
+          <table id="feedbackDataResults" class="feedbackRecordsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Grade Level</th>
+                <th>Destination</th>
+                <th>Date of Visit</th>
+                <th>Favorite Spot</th>
+                <th>Educational Feedback</th>
+                <th>Tourism Feedback</th>
+                <th>Cleanliness</th>
+                <th>Amenities</th>
+                <th>Suggestion</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </main>
     <!-- Sidebar -->
@@ -110,17 +112,11 @@
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
               <a href="./healthForm.html">CoVID 19 Survey</a>
-              <a href="./fieldtripForm.html"
-                >Fieldtrip Feedback</a
-              >
+              <a href="./fieldtripForm.html">Fieldtrip Feedback</a>
             </div>
             <div class="recordTabs">
-              <a href="./healthFormRecords.html"
-                >Health Records</a
-              >
-              <a href="#"
-                >Feedback Records</a
-              >
+              <a href="./healthFormRecords.html">Health Records</a>
+              <a href="#">Feedback Records</a>
             </div>
           </div>
         </div>

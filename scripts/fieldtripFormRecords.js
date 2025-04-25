@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (feedbackData.length === 0) {
     const noDataRow = document.createElement("tr");
-    noDataRow.innerHTML = `<td colspan="11" style="text-align:center;">No Data Available</td>`;
+    noDataRow.innerHTML = `<td colspan="12" style="text-align:center;" class="noDataRow">No Data Available</td>`;
     tableBody.appendChild(noDataRow);
   } else {
     feedbackData.forEach((entry, index) => {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <td><input type="button" name="viewLearnFeedback" value="View" onclick="showContentWindow(${index}, 'learnFeedback')"></td>
   <td>${entry.educRating}</td>
   <td>${entry.cleanRating}</td>
-  <td>&bull; ${entry.amenities.join("<br> &bull; ")}</td>
+  <td class="list-amenities">&bull; ${entry.amenities.join("<br> &bull; ")}</td>
   <td><input type="button" name="viewSuggestion" value="View" onclick="showContentWindow(${index}, 'suggestions')"></td>
   <td><input type="button" name="deleteRecord" value="Delete" onclick="deleteRecord(${index})"></td>`;
       tableBody.appendChild(row);

@@ -54,7 +54,6 @@ main {
 }
 
 .form-container:hover {
-  transform: scale(1.02);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
