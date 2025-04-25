@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (feedbackData.length === 0) {
     const noDataRow = document.createElement("tr");
-    noDataRow.innerHTML = `<td colspan="12" style="text-align:center;" class="noDataRow">No Data Available</td>`;
+    noDataRow.innerHTML = `<td colspan="9" style="text-align:center;" class="noDataRow">No Data Available</td>`;
     tableBody.appendChild(noDataRow);
   } else {
     feedbackData.forEach((entry, index) => {
@@ -15,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <td>${entry.gradeLevel}</td>
   <td>${entry.destination}</td>
   <td>${entry.visitDate}</td>
-  <td>${entry.favorite}</td>
-  <td><input type="button" name="viewLearnFeedback" value="View" onclick="showContentWindow(${index}, 'learnFeedback')"></td>
-  <td>${entry.educRating}</td>
   <td>${entry.cleanRating}</td>
   <td class="list-amenities">&bull; ${entry.amenities.join("<br> &bull; ")}</td>
   <td><input type="button" name="viewSuggestion" value="View" onclick="showContentWindow(${index}, 'suggestions')"></td>
@@ -35,7 +32,7 @@ function deleteRecord(itemIndex) {
 
   // Saves the updated array
   localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
-  window.location.href = "../content-pages/fieldtripFormRecords.html";
+  window.location.href = "../content-pages/tourismFormRecords.html";
 }
 
 function showContentWindow(entryIndex, fieldName) {
