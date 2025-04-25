@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="./styles/index/headerIndex.css" />
     <link rel="stylesheet" href="./styles/index/webFrameIndex.css" />
     <link rel="stylesheet" href="./styles/components/sidebar.css" />
+    <link rel="stylesheet" href="./styles/components/footer.css" />
+    <link rel="stylesheet" href="./styles/index/index.css" />
 
     <!-- Web Page Information-->
-    <title>Biyaheng Lira | Travels and Tours Inc.</title>
+    <title>City of Calamba Government</title>
     <link
       rel="icon"
       href="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
@@ -32,16 +34,16 @@
       <div class="header-container">
         <div class="logo-area">
           <img
-            src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+            src="./assets/icons/city-seal.svg"
             alt="Seal of Department of Education"
           />
-          <label for="logo-name">Biyaheng Lira</label>
+          <a href="#">City of Calamba</a>
         </div>
         <div class="main-panel-tabs">
           <div class="dropdown-survey">
             <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
-              <a href="./content-pages/healthForm.html">CoVID 19 Survey</a>
+              <a href="./content-pages/healthForm.html">Health Survey</a>
               <a href="./content-pages/fieldtripForm.html"
                 >Fieldtrip Feedback</a
               >
@@ -64,7 +66,34 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="section-1">
+        <div class="city-seal">
+          <img
+            src="./assets/icons/city-seal.svg"
+            alt="Official Seal of Calamba"
+          />
+        </div>
+        <div class="site-caption">
+          <label for="caption" class="caption"
+            >The Premier City of Growth, Leisure and National Pride</label
+          >
+        </div>
+      </div>
+      <div class="section-2">
+        <label for="header" class="section-header">Surveys</label>
+        <div class="cards">
+          <div class="survey-card">
+            <img src="./assets/icons/healthForm-Light.svg" alt="Health Form" />
+            <label for="healthForm">Health Form</label>
+          </div>
+          <div class="survey-card">
+            <img src="./assets/icons/tourForm-Light.svg" alt="Health Form" />
+            <label for="healthForm">Tourism Feedback</label>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Sidebar -->
     <div class="right-sidebar" id="sidebarBody">
       <div class="right-container">
@@ -74,7 +103,7 @@
           </div>
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
-              <a href="./content-pages/healthForm.html">CoVID 19 Survey</a>
+              <a href="./content-pages/healthForm.html">Health Survey</a>
               <a href="./content-pages/fieldtripForm.html"
                 >Fieldtrip Feedback</a
               >
@@ -93,17 +122,42 @@
           <div class="logo-sidebar">
             <div class="logo-section-1">
               <img
-                src="../assets/icons/Seal_of_the_Department_of_Education_of_the_Philippines.svg"
+                src="./assets/icons/city-seal.svg"
                 alt="Seal of Department of Education"
               />
-              <label for="logo-name">Biyaheng Lira</label>
+              <label for="logo-name">City of Calamba</label>
             </div>
-            <label class="trademark">Created @ 2025</label>
+            <label class="trademark">Developed - 2025</label>
           </div>
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="logo-footer">
+          <img
+            src="./assets/icons/city-seal.svg"
+            alt="Official Seal of Calamba"
+          />
+          <label>City of Calamba</label>
+        </div>
+        <label class="trademark">Developed - 2025</label>
+      </div>
+      <div class="footer-options">
+        <select class="language-dropdown" id="languageSwitcher">
+          <option value="en">English</option>
+          <option value="tl">Filipino</option>
+          <option value="es">Español</option>
+          <option value="zh">简体中文</option>
+          <option value="ms">Melayu</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ja">日本語</option>
+        </select>        
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
     <script src="./scripts/components/sidebar.js"></script>
   </body>
 </html>

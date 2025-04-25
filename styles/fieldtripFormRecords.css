@@ -55,7 +55,7 @@ textarea:active {
 main {
   display: flex;
   justify-content: center;
-  background: url(../assets/images/Rizal_Shrine\,_Calamba\,_Laguna\,_Mar_2023.webp) no-repeat center center fixed;
+  background: url(../assets/images/fieldTripFormRecords.webp) no-repeat center center fixed;
   background-size: cover;
   width: 100%;
   height: 92vh;

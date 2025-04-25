@@ -44,7 +44,7 @@
 }
 
 main {
-  background: url("../assets/images/1670Los_Baños_Calamba_National_Highway_104.webp")
+  background: url("../assets/images/healthFormBG.webp")
     no-repeat center center fixed;
 }
 
@@ -54,7 +54,7 @@ main {
   height: fit-content;
   margin: 2em auto;
   font-family: "Poppins", serif;
-  background-color: rgba(240, 238, 238, 0.555);
+  background-color: rgba(240, 238, 238, 0.95);
   border: 2px solid var(--accent-color);
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);

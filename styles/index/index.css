@@ -1,0 +1,127 @@
+@media screen and (max-width: 1023px) {
+  .section-1 {
+    flex-direction: column;
+    gap: 10em;
+    padding: 10em 2em 20em 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 {
+    flex-direction: row;
+  }
+}
+
+main {
+  display: block;
+  min-height: 92vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-1,
+.section-2 {
+  min-height: 92vh;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(../../assets/images/) no-repeat center center;
+  transition: 2s ease-in;
+  box-sizing: border-box;
+}
+
+.city-seal,
+.site-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 500px;
+  max-height: 500px;
+  box-sizing: border-box;
+}
+
+.city-seal {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.site-caption label {
+  font-family: "Poppins", serif;
+  font-size: 4em;
+  color: var(--text-color);
+  text-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
+  box-sizing: border-box;
+}
+
+.section-2 {
+  display: flex;
+  background-color: rgb(240, 238, 238);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 2rem;
+}
+
+.section-header {
+    margin: 1em 0px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 4em;
+    box-sizing: border-box;
+    margin-bottom: 5em;
+}
+
+.survey-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    height: 350px;
+    padding: 3em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #6b5f1cfa;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.survey-card:hover {
+    background-color: #503606;
+    box-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
+    transform: scale(1.05);
+}
+
+.survey-card:active {
+    transform: scale(1.02);
+}
+
+.survey-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.survey-card label {
+    font-family: "Poppins", serif;
+    color: var(--text-color);
+    font-size: 1.5em;
+}
