@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       row.innerHTML = `
   <td>${index + 1}</td>
   <td>${entry.name}</td>
-  <td>${entry.gradeLevel}</td>
+  <td>${entry.nationality}</td>
   <td>${entry.destination}</td>
   <td>${entry.visitDate}</td>
   <td>${entry.cleanRating}</td>

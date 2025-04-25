@@ -47,7 +47,7 @@ function confirmSubmission() {
   //Array entry for inserting data to localStorage.
   const newEntry = {
     name: formData.get("name"),
-    gradeLevel: formData.get("grade"),
+    nationality: formData.get("nationality"),
     destination: formData.get("destination"),
     visitDate: formData.get("visit-date"),
     cleanRating: formData.get("cleanStars"),
