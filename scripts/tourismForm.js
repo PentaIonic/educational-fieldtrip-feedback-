@@ -40,7 +40,7 @@ function confirmSubmission() {
   }
 
   const suggestions = formData.get("suggestions").trim();
-  if (!learnFeedback) {
+  if (!suggestions) {
     formData.set("suggestions", "N/A");
   }
 
