@@ -19,7 +19,7 @@ tourismSurvey.addEventListener("submit", function (e) {
 });
 
 function displayPrompt() {
-    promptMessage.style.display = "flex";
+  promptMessage.style.display = "flex";
 }
 
 //Function for storing the data in web's localStorage.
