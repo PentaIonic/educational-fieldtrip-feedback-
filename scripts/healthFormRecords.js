@@ -16,14 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
     <td>${entry.gender}</td>
     <td>${entry.address}</td>
     <td>${entry.vaccineStatus}</td>
-    <td class="list-symptoms">&bull; ${entry.symptoms.join("<br> &bull; ")}</td>
-    <td>${entry.lastmedicalCheckupDate}</td>
+    <td class="list-symptoms">&bull; ${entry.symptom.join("<br> &bull; ")}</td>
+    <td>${entry.lastMedicalCheckupDate}</td>
     <td><input type="button" name="viewHealthNotes" value="View" onclick="showContentWindow(${index}, 'healthNotes')"></td>
     <td><input type="button" name="deleteRecord" value="Delete" onclick="deleteRecord(${index})"></td>`;
       tableBody.appendChild(row);
     });
   }
 });
+
+console.log("This File is loaded.");
 
 function deleteRecord(itemIndex) {
   const healthData = JSON.parse(localStorage.getItem("healthData")) || [];
