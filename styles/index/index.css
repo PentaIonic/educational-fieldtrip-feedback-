@@ -27,7 +27,7 @@ main {
 .section-1 {
   display: flex;
   justify-content: space-evenly;
-  background: url() no-repeat center center fixed;
+  background: url(../../assets/images/screensaver1.webp) no-repeat center center fixed;
   background-size: cover;
   align-items: center;
   transition: 2s ease-in;
