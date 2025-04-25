@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const captionDisplay = document.getElementsByClassName("caption")[0];
 
     const backgrounds = [
-        "url(../assets/images/screensaver1.webp) no-repeat center center",
-        "url(../assets/images/screensaver2.webp) no-repeat center center",
-        "url(../assets/images/screensaver3.webp) no-repeat center center",
-        "url(../assets/images/screensaver4.webp) no-repeat center center"
+        "url(../../../assets/images/screensaver1.webp) no-repeat center center",
+        "url(../../../assets/images/screensaver2.webp) no-repeat center center",
+        "url(../../../assets/images/screensaver3.webp) no-repeat center center",
+        "url(../../../assets/images/screensaver4.webp) no-repeat center center"
     ];
 
     function delay(ms) {
