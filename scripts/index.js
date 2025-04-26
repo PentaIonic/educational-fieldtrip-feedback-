@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const switcheroo = document.getElementsByClassName("section-1")[0];
 
     const backgrounds = [
-        'url(../../assets/images/screensaver1.jpg) no-repeat center center fixed',
-        'url(../../assets/images/screensaver2.webp) no-repeat center center fixed',
-        'url(../../assets/images/screensaver3.webp) no-repeat center center fixed',
-        'url(../../assets/images/screensaver4.webp) no-repeat center center fixed'
+        'url(https://pentaionic.github.io/educational-fieldtrip-feedback-/assets/images/screensaver1.webp) no-repeat center center fixed',
+        'url(https://pentaionic.github.io/educational-fieldtrip-feedback-/assets/images/screensaver2.webp) no-repeat center center fixed',
+        'url(https://pentaionic.github.io/educational-fieldtrip-feedback-/assets/images/screensaver3.webp) no-repeat center center fixed',
+        'url(https://pentaionic.github.io/educational-fieldtrip-feedback-/assets/images/screensaver4.webp) no-repeat center center fixed'
     ];
 
     function delay(ms) {
