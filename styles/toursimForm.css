@@ -210,6 +210,7 @@ textarea {
 
 .cleanliness-rating:not(:hover) label input:checked ~ .icon,
 .cleanliness-rating:hover label:hover input ~ .icon {
+  font-weight: bold;
   color: #c2bd7b;
 }
 
