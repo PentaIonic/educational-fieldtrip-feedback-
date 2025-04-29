@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <td>${entry.nationality}</td>
   <td>${entry.destination}</td>
   <td>${entry.visitDate}</td>
-  <td>${entry.cleanRating}</td>
+  <td>${entry.cleanRating}/5 &#9734;</td>
   <td class="list-amenities">&bull; ${entry.amenities.join("<br> &bull; ")}</td>
   <td><input type="button" name="viewSuggestion" value="View" onclick="showContentWindow(${index}, 'suggestions')"></td>
   <td><input type="button" name="deleteRecord" value="Delete" onclick="deleteRecord(${index})"></td>`;

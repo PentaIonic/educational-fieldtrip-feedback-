@@ -24,7 +24,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 5em minmax(100vh, fit-content) 5em;
+    grid-template-rows: 5em minmax(100vh, fit-content) minmax(5em, fit-content);
     grid-template-areas: 
      'header'
      'main'
@@ -50,4 +50,5 @@ main {
 footer {
     background-color: var(--accent-color);
     grid-area: footer;
+    box-sizing: border-box;
 }

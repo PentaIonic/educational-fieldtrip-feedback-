@@ -22,11 +22,7 @@
 
     <!-- Web Page Information-->
     <title>City of Calamba Government</title>
-    <link
-      rel="icon"
-      href="./assets/icons/city-seal.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./assets/icons/city-seal.svg" type="image/x-icon" />
   </head>
   <body>
     <!-- Top Navigation Bar -->
@@ -44,9 +40,7 @@
             <div class="dropSurveyBtn">Surveys</div>
             <div class="dropdown-survey-content">
               <a href="./content-pages/healthForm.html">Health Survey</a>
-              <a href="./content-pages/tourismForm.html"
-                >Tourism Survey</a
-              >
+              <a href="./content-pages/tourismForm.html">Tourism Survey</a>
             </div>
           </div>
           <div class="dropdown-records">
@@ -83,11 +77,17 @@
       <div class="section-2">
         <label for="header" class="section-header">Surveys</label>
         <div class="cards">
-          <div class="survey-card" onclick="window.location.href = './content-pages/healthForm.html'">
+          <div
+            class="survey-card"
+            onclick="window.location.href = './content-pages/healthForm.html'"
+          >
             <img src="./assets/icons/healthForm-Light.svg" alt="Health Form" />
             <label for="healthForm">Health Form</label>
           </div>
-          <div class="survey-card" onclick="window.location.href = './content-pages/tourismForm.html'">
+          <div
+            class="survey-card"
+            onclick="window.location.href = './content-pages/tourismForm.html'"
+          >
             <img src="./assets/icons/tourForm-Light.svg" alt="Tourism Form" />
             <label for="healthForm">Tourism Feedback</label>
           </div>
@@ -104,9 +104,7 @@
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
               <a href="./content-pages/healthForm.html">Health Survey</a>
-              <a href="./content-pages/tourismForm.html"
-                >Tourism Feedback</a
-              >
+              <a href="./content-pages/tourismForm.html">Tourism Feedback</a>
             </div>
             <div class="recordTabs">
               <a href="./content-pages/healthFormRecords.html"
@@ -145,23 +143,26 @@
       </div>
 
       <div class="links">
-        <p>About</p>
-        <a href="" class="description">This website offers community resources, including health surveys, records access, and information on Calamba's tourist attractions.</a>
-    </div>
-    <div class="links">
-        <p>Explore</p>
-        <a href="">Home</a>
-        <a href="">Surveys</a>
-        <a href="">Records</a>
-    </div>
-    
+        <h4>About</h4>
+        <p class="description"
+          >This website offers community resources, including health surveys,
+          records access, and information on Calamba's tourist attractions.</p
+        >
+      </div>
+      <div class="links">
+        <h4>Explore</h4>
+        <a href="./index.html">Home</a>
+        <a href="#section-2">Surveys</a>
+        <a href="#section-2">Records</a>
+      </div>
+
       <div class="footer-options">
         <select class="language-dropdown" id="languageSwitcher">
           <option value="en">English</option>
           <option value="tl">Filipino</option>
         </select>
       </div>
-    </footer>  
+    </footer>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/components/sidebar.js"></script>
   </body>

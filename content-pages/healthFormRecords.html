@@ -22,11 +22,7 @@
 
     <!-- Web Page Information-->
     <title>Health Form Records</title>
-    <link
-      rel="icon"
-      href="../assets/icons/city-seal.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
   </head>
   <body>
     <!-- Top Navigation Bar -->
@@ -100,6 +96,12 @@
           </table>
         </div>
       </div>
+
+      <!-- FLOATING PRINT BUTTON -->
+      <div class="floating-print-button">
+        <div class="tooltip-text">Print Records</div>
+        <button onclick="printTable()">🖨️</button>
+      </div>
     </main>
     <!-- Sidebar -->
     <div class="right-sidebar" id="sidebarBody">
@@ -144,6 +146,21 @@
         </div>
         <label class="trademark">Developed - 2025</label>
       </div>
+
+      <div class="links">
+        <h4>About</h4>
+        <p class="description">
+          This website offers community resources, including health surveys,
+          records access, and information on Calamba's tourist attractions.
+        </p>
+      </div>
+      <div class="links">
+        <h4>Explore</h4>
+        <a href="./index.html">Home</a>
+        <a href="#section-2">Surveys</a>
+        <a href="#section-2">Records</a>
+      </div>
+
       <div class="footer-options">
         <select class="language-dropdown" id="languageSwitcher">
           <option value="en">English</option>
@@ -151,6 +168,7 @@
         </select>
       </div>
     </footer>
+    <script src="../scripts/printHealthRecords.js"></script>
     <script src="../scripts/healthFormRecords.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
   </body>

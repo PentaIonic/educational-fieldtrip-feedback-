@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Web Information & Responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Styles & Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="../styles/printRecords.css">
+
+    <!-- Page Tab -->
+    <title>Tourism Feedback Records</title>
+    <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="gov-logo"><img src="../assets/icons/city-seal.svg" alt=""></div>
+        <div class="document-title">
+          <h2>Tourism Feedback Records</h2>
+            <p>Records as of : <script>
+            document.write(new Date().toLocaleString());
+            </script></p>
+        </div>
+        <div class="gov-logo"><img src="../assets/icons/gov-logo.png" alt=""></div>
+      </header>
+      <!-- Table View -->
+      <div class="table-container">
+        <div class="horz-scroll">
+          <table id="feedbackDataResults" class="feedbackRecordsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Nationality</th>
+                <th>Destination</th>
+                <th>Date of Visit</th>
+                <th>Cleanliness</th>
+                <th>Amenities</th>
+                <th>Suggestion</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <script src="../scripts/printTourismRecords.js"></script>
+  </body>
+</html>

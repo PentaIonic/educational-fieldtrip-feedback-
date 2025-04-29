@@ -1,0 +1,47 @@
+main {
+    font-family: "Poppins", serif;
+    display: block;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.document-title {
+    text-align: center;
+}
+
+.gov-logo {
+    height: 70px;
+    width: 70px;
+}
+
+.gov-logo img {
+    height: 70px;
+    width: auto;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 12px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: start;
+}

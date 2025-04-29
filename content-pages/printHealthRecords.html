@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Web Information & Responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Styles & Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="../styles/printRecords.css" />
+
+    <!-- Page Tab -->
+    <title>Health Records</title>
+    <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="gov-logo">
+        <img src="../assets/icons/city-seal.svg" alt="" />
+      </div>
+      <div class="document-title">
+        <h2>Health Records</h2>
+        <p>
+          Records as of :
+          <script>
+            document.write(new Date().toLocaleString());
+          </script>
+        </p>
+      </div>
+      <div class="gov-logo">
+        <img src="../assets/icons/gov-logo.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <!-- Table View -->
+      <div class="table-container">
+        <div class="horz-scroll">
+          <table id="feedbackDataResults" class="feedbackRecordsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Region</th>
+                <th>Vaccine Status</th>
+                <th>Symptoms</th>
+                <th>Last Medical Check-up Date</th>
+                <th>Health Notes</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <script src="../scripts/printHealthRecords.js"></script>
+    </main>
+  </body>
+</html>
