@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (healthData.length === 0) {
     const noDataRow = document.createElement("tr");
-    noDataRow.innerHTML = `<td colspan="10" style="text-align:center;" class="noDataRow">No Data Available</td>`;
+    noDataRow.innerHTML = `<td colspan="10" style="text-align:center;" class="noDataRow"><span data-translate="no-data">No Data Available</span></td>`;
     tableBody.appendChild(noDataRow);
   } else {
     healthData.forEach((entry, index) => {

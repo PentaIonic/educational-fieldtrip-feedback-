@@ -34,21 +34,33 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <a href="../index.html">City of Calamba</a>
+          <a href="../index.html" data-translate="City of Calamba"
+            >City of Calamba</a
+          >
         </div>
         <div class="main-panel-tabs">
           <div class="dropdown-survey">
-            <div class="dropSurveyBtn">Surveys</div>
+            <div class="dropSurveyBtn" data-translate="Surveys">Surveys</div>
             <div class="dropdown-survey-content">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
           </div>
           <div class="dropdown-records">
-            <div class="dropRecordsBtn">Records</div>
+            <div class="dropRecordsBtn" data-translate="Records">Records</div>
             <div class="dropdown-records-content">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tour Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -60,12 +72,12 @@
     <main>
       <div class="form-box">
         <form id="healthForm">
-          <h2>Personal Information</h2>
+          <h2 data-translate="personal-information">Personal Information</h2>
           <hr />
           <div class="form-content-box first">
             <div class="form-content-section1-box first">
               <label for="fullName"
-                ><b>Full Name <span style="color: red">*</span></b></label
+                ><b data-translate="full-name">Full Name <span style="color: red">*</span></b></label
               >
               <input
                 type="text"
@@ -75,7 +87,7 @@
                 required
               />
               <label for="age"
-                ><b>Age <span style="color: red">*</span></b></label
+                ><b data-translate="age">Age <span style="color: red">*</span></b></label
               >
               <input
                 type="number"
@@ -88,19 +100,19 @@
 
             <div class="form-content-section1-box second">
               <label for="gender"
-                ><b>Gender <span style="color: red">*</span></b></label
+                ><b data-translate="gender">Gender <span style="color: red">*</span></b></label
               ><br />
               <div class="list-row">
                 <input type="radio" name="gender" id="gender1" value="Male" />
-                <label for="genderMale">Male</label>
+                <label for="genderMale" data-translate="male">Male</label>
               </div>
               <div class="list-row">
                 <input type="radio" name="gender" value="Female" />
-                <label for="genderFemale">Female</label>
+                <label for="genderFemale" data-translate="female">Female</label>
               </div>
               <div class="list-row">
                 <input type="radio" name="gender" value="Other" />
-                <label for="genderOther">Other</label>
+                <label for="genderOther" data-translate="other">Other</label>
               </div>
               <input
                 type="text"
@@ -114,7 +126,7 @@
 
             <div class="form-content-section1-box third">
               <label for="address"
-                ><b>Barangay <span style="color: red">*</span></b></label
+                ><b data-translate="barangay">Barangay <span style="color: red">*</span></b></label
               ><br />
               <select name="address" id="address" required>
                 <option
@@ -122,6 +134,7 @@
                   selected
                   disabled
                   style="color: gray"
+                  data-translate="select-barangay"
                 >
                   Select Barangay
                 </option>
@@ -194,12 +207,12 @@
             </div>
           </div>
 
-          <h2>Health Status</h2>
+          <h2 data-translate="health-status">Health Status</h2>
           <hr />
           <div class="form-content-box second">
             <div class="form-content-section2-box first">
               <label for="vaccineStatus"
-                ><b
+                ><b data-translate="vac-status"
                   >Vaccination Status <span style="color: red">*</span></b
                 ></label
               >
@@ -209,34 +222,35 @@
                   selected
                   disabled
                   style="color: gray"
+                  data-translate="status"
                 >
                   Status
                 </option>
-                <option value="Vaccinated">Vaccinated</option>
-                <option value="Unvaccinated">Unvaccinated</option>
+                <option value="Vaccinated" data-translate="vaccinated">Vaccinated</option>
+                <option value="Unvaccinated" data-translate="unvaccinated">Unvaccinated</option>
               </select>
             </div>
 
             <div class="form-content-section2-box second">
-              <label for="recentSymptoms"><b>Recent Symptoms</b></label
+              <label for="recentSymptoms"><b data-translate="recent-symptoms">Recent Symptoms</b></label
               ><br />
               <div class="list-row">
                 <input type="checkbox" name="symptom" value="Fever" />
-                <label for="symptom1">Fever</label>
+                <label for="symptom1" data-translate="fever">Fever</label>
               </div>
               <div class="list-row">
                 <input type="checkbox" name="symptom" value="Cough" />
-                <label for="symptom2">Cough</label>
+                <label for="symptom2" data-translate="cough">Cough</label>
               </div>
               <div class="list-row">
                 <input type="checkbox" name="symptom" value="Fatigue" />
-                <label for="symptom3">Fatigue</label>
+                <label for="symptom3" data-translate="fatigue">Fatigue</label>
               </div>
             </div>
 
             <div class="form-content-section2-box third">
               <label for="lastMedicalCheckupDate"
-                ><b
+                ><b data-translate="last-checkup"
                   >Last Medical Checkup <span style="color: red">*</span></b
                 ></label
               >
@@ -251,20 +265,14 @@
 
           <div class="form-content-box third">
             <div class="form-content-section2-box fourth">
-              <label for="healthNotes"><b>Additional Health Notes</b></label>
+              <label for="healthNotes"><b data-translate="health-notes">Additional Health Notes</b></label>
               <textarea name="healthNotes" id="healthNotes"></textarea>
             </div>
           </div>
 
           <!-- Submit Button -->
           <div class="form-content-box fourth">
-            <input
-              type="button"
-              value="Submit"
-              id="submitBtn"
-              class="submit-btn"
-              onclick="displayPrompt()"
-            />
+            <button type="button" onclick="displayPrompt()" data-translate="submit">Submit</button>
           </div>
           <!-- Prompt Messages -->
           <div class="prompt-message" id="promptMessage">
@@ -338,12 +346,22 @@
           </div>
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
             <div class="recordTabs">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tourism Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -354,9 +372,13 @@
                 src="../assets/icons/city-seal.svg"
                 alt="Official Seal of Calamba"
               />
-              <label for="logo-name">City of Calamba</label>
+              <label for="logo-name" data-translate="City of Calamba"
+                >City of Calamba</label
+              >
             </div>
-            <label class="trademark">Created @ 2025</label>
+            <label class="trademark" data-translate="Developed - 2025"
+              >Developed - 2025</label
+            >
           </div>
         </div>
       </div>
@@ -368,32 +390,45 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <label>City of Calamba</label>
+          <label data-translate="City of Calamba">City of Calamba</label>
         </div>
-        <label class="trademark">Developed - 2025</label>
+        <label class="trademark" data-translate="Developed - 2025"
+          >Developed - 2025</label
+        >
       </div>
 
       <div class="links">
-        <h4>About</h4>
-        <p class="description">
+        <h4 data-translate="About">About</h4>
+        <p
+          class="description"
+          data-translate="This website offers community resources, including health surveys, records access, and information on Calamba's tourist attractions."
+        >
           This website offers community resources, including health surveys,
           records access, and information on Calamba's tourist attractions.
         </p>
       </div>
       <div class="links">
-        <h4>Explore</h4>
-        <a href="./index.html">Home</a>
-        <a href="#section-2">Surveys</a>
-        <a href="#section-2">Records</a>
+        <h4 data-translate="Explore">Explore</h4>
+        <a href="./index.html" data-translate="Home">Home</a>
+        <a href="#section-2" data-translate="Surveys">Surveys</a>
+        <a href="#section-2" data-translate="Records">Records</a>
       </div>
 
       <div class="footer-options">
         <select class="language-dropdown" id="languageSwitcher">
           <option value="en">English</option>
           <option value="tl">Filipino</option>
+          <option value="es">Español</option>
+          <option value="zh">简体中文</option>
+          <option value="ms">Melayu</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ja">日本語</option>
         </select>
       </div>
     </footer>
+    <script src="../scripts/languages/healthFormLang.js"></script>
     <script src="../scripts/healthForm.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
   </body>

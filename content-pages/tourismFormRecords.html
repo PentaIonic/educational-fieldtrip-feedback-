@@ -20,12 +20,7 @@
     <link rel="stylesheet" href="../styles/components/footer.css" />
     <link rel="stylesheet" href="../styles/tourismFormRecords.css" />
 
-    <!-- Custom Inline Styles for Floating Print Button -->
-    <style>
-
-    </style>
-
-    <!-- Page Tab -->
+    <!-- Web Page Information -->
     <title>Tourism Feedback Records</title>
     <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
   </head>
@@ -39,21 +34,33 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <a href="../index.html">City of Calamba</a>
+          <a href="../index.html" data-translate="City of Calamba"
+            >City of Calamba</a
+          >
         </div>
         <div class="main-panel-tabs">
           <div class="dropdown-survey">
-            <div class="dropSurveyBtn">Surveys</div>
+            <div class="dropSurveyBtn" data-translate="Surveys">Surveys</div>
             <div class="dropdown-survey-content">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
           </div>
           <div class="dropdown-records">
-            <div class="dropRecordsBtn">Records</div>
+            <div class="dropRecordsBtn" data-translate="Records">Records</div>
             <div class="dropdown-records-content">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tour Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -63,6 +70,7 @@
       </div>
     </header>
 
+    <!-- Table -->
     <main>
       <!-- Window Description -->
       <div class="textareaWindow" id="textAreaWindow">
@@ -89,14 +97,14 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>Name</th>
-                <th>Nationality</th>
-                <th>Destination</th>
-                <th>Date of Visit</th>
-                <th>Cleanliness</th>
-                <th>Amenities</th>
-                <th>Suggestion</th>
-                <th>Actions</th>
+                <th data-translate="name">Name</th>
+                <th data-translate="nationality">Nationality</th>
+                <th data-translate="destination">Destination</th>
+                <th data-translate="date-visit">Date of Visit</th>
+                <th data-translate="clean">Cleanliness</th>
+                <th data-translate="amenities">Amenities</th>
+                <th data-translate="suggestions">Suggestions</th>
+                <th data-translate="actions">Actions</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -106,7 +114,9 @@
 
       <!-- FLOATING PRINT BUTTON -->
       <div class="floating-print-button">
-        <div class="tooltip-text">Print Records</div>
+        <div class="tooltip-text">
+          <span data-translate="print-records">Print Records</span>
+        </div>
         <button onclick="printTable()">🖨️</button>
       </div>
     </main>
@@ -120,12 +130,22 @@
           </div>
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
             <div class="recordTabs">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tourism Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -136,14 +156,19 @@
                 src="../assets/icons/city-seal.svg"
                 alt="Official Seal of Calamba"
               />
-              <label for="logo-name">City of Calamba</label>
+              <label for="logo-name" data-translate="City of Calamba"
+                >City of Calamba</label
+              >
             </div>
-            <label class="trademark">Created @ 2025</label>
+            <label class="trademark" data-translate="Developed - 2025"
+              >Developed - 2025</label
+            >
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Footer Page -->
     <footer>
       <div class="footer-content">
         <div class="logo-footer">
@@ -151,34 +176,47 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <label>City of Calamba</label>
+          <label data-translate="City of Calamba">City of Calamba</label>
         </div>
-        <label class="trademark">Developed - 2025</label>
+        <label class="trademark" data-translate="Developed - 2025"
+          >Developed - 2025</label
+        >
       </div>
 
       <div class="links">
-        <h4>About</h4>
-        <p class="description">
+        <h4 data-translate="About">About</h4>
+        <p
+          class="description"
+          data-translate="This website offers community resources, including health surveys, records access, and information on Calamba's tourist attractions."
+        >
           This website offers community resources, including health surveys,
           records access, and information on Calamba's tourist attractions.
         </p>
       </div>
       <div class="links">
-        <h4>Explore</h4>
-        <a href="./index.html">Home</a>
-        <a href="#section-2">Surveys</a>
-        <a href="#section-2">Records</a>
+        <h4 data-translate="Explore">Explore</h4>
+        <a href="./index.html" data-translate="Home">Home</a>
+        <a href="#section-2" data-translate="Surveys">Surveys</a>
+        <a href="#section-2" data-translate="Records">Records</a>
       </div>
 
       <div class="footer-options">
         <select class="language-dropdown" id="languageSwitcher">
           <option value="en">English</option>
           <option value="tl">Filipino</option>
+          <option value="es">Español</option>
+          <option value="zh">简体中文</option>
+          <option value="ms">Melayu</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ja">日本語</option>
         </select>
       </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Local Scripts -->
+    <script src="../scripts/languages/tourismRecordsLang.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
     <script src="../scripts/tourismFormRecords.js"></script>
     <script src="../scripts/printTourismRecords.js"></script>

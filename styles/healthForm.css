@@ -44,8 +44,8 @@
 }
 
 main {
-  background: url("../assets/images/healthFormBG.webp")
-    no-repeat center center fixed;
+  background: url("../assets/images/healthFormBG.webp") no-repeat center center
+    fixed;
 }
 
 .form-box {
@@ -95,9 +95,9 @@ select:focus,
 option:focus,
 textarea:focus,
 input[type="Date"]:focus {
-    border-color: #979657;
-    background-color: #909453;
-    outline: none;
+  border-color: #979657;
+  background-color: #909453;
+  outline: none;
 }
 
 .list-row {
@@ -123,29 +123,29 @@ input[type="date"] {
   margin: 0 auto;
 }
 
-.submit-btn {
-    background-color: #6b5f1cfa;
-    color: #eaf1ee;
-    border: 2px solid #6b5f1cfa;
-    text-align: center;
-    display: block;
-    margin: 30px auto 0px auto;
-    padding: 12px 25px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+.form-content-box button {
+  background-color: #6b5f1cfa;
+  color: #eaf1ee;
+  border: 2px solid #6b5f1cfa;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.submit-btn:hover {
-    background-color: #503606;
-    box-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
-    transform: scale(1.05);
+.form-content-box button:hover {
+  background-color: #503606;
+  box-shadow: 0 4px 12px rgba(7, 7, 7, 0.527);
+  transform: scale(1.05);
 }
 
-.submit-btn:active {
-    transform: scale(1.02);
+.form-content-box button:active {
+  transform: scale(1.02);
 }
 
 textarea {

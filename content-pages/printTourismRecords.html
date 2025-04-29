@@ -47,13 +47,13 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>Name</th>
-                <th>Nationality</th>
-                <th>Destination</th>
-                <th>Date of Visit</th>
-                <th>Cleanliness</th>
-                <th>Amenities</th>
-                <th>Suggestion</th>
+                <th data-translate="name">Name</th>
+                <th data-translate="nationality">Nationality</th>
+                <th data-translate="destination">Destination</th>
+                <th data-translate="date-visit">Date of Visit</th>
+                <th data-translate="clean">Cleanliness</th>
+                <th data-translate="amenities">Amenities</th>
+                <th data-translate="suggestions">Suggestions</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -65,9 +65,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const feedbackData =
           JSON.parse(localStorage.getItem("feedbackData")) || [];
-        const tableBody = document.querySelector(
-          "#feedbackDataResults tbody"
-        );
+        const tableBody = document.querySelector("#feedbackDataResults tbody");
 
         if (feedbackData.length === 0) {
           const noDataRow = document.createElement("tr");

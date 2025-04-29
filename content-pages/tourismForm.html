@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../styles/components/footer.css" />
     <link rel="stylesheet" href="../styles/toursimForm.css" />
 
-    <!-- Web Page Information-->
+    <!-- Web Page Information -->
     <title>Tourism Feedback</title>
     <link rel="icon" href="../assets/icons/city-seal.svg" type="image/x-icon" />
   </head>
@@ -34,21 +34,33 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <a href="../index.html">City of Calamba</a>
+          <a href="../index.html" data-translate="City of Calamba"
+            >City of Calamba</a
+          >
         </div>
         <div class="main-panel-tabs">
           <div class="dropdown-survey">
-            <div class="dropSurveyBtn">Surveys</div>
+            <div class="dropSurveyBtn" data-translate="Surveys">Surveys</div>
             <div class="dropdown-survey-content">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
           </div>
           <div class="dropdown-records">
-            <div class="dropRecordsBtn">Records</div>
+            <div class="dropRecordsBtn" data-translate="Records">Records</div>
             <div class="dropdown-records-content">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tour Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -57,6 +69,7 @@
         </div>
       </div>
     </header>
+
     <!-- Web Content -->
     <main>
       <!-- CSS Frame of Form -->
@@ -64,13 +77,13 @@
         <form action="" id="tourismSurvey">
           <!-- Form Background Header -->
           <div class="form-header">
-            <h1>Tourism Services Survey</h1>
-            <h2>Feedback Form</h2>
+            <h1 data-translate="form-header">Tourism Services Survey</h1>
+            <h2 data-translate="form-subheader">Feedback Form</h2>
           </div>
           <!-- Student Information Section -->
           <div class="personal-info">
-            <h4>PERSONAL INFO</h4>
-            <label for="name"
+            <h4 data-translate="personal-info">PERSONAL INFO</h4>
+            <label for="name" data-translate="name"
               >Name<span style="color: red"><b>*</b></span></label
             >
             <input
@@ -80,23 +93,23 @@
               placeholder="Name"
               required
             />
-            <label for="nationality"
+            <label for="nationality" data-translate="nationality"
               >Nationality<span style="color: red"><b>*</b></span></label
             >
             <select id="nationality" name="nationality" required>
-              <option value="" selected disabled>Select Nationality</option>
-              <option value="Local">Local</option>
-              <option value="Foreign">Foreign</option>
+              <option value="" selected disabled data-translate="select-nationality">Select Nationality</option>
+              <option value="Local" data-translate="local">Local</option>
+              <option value="Foreign" data-translate="foreign">Foreign</option>
             </select>
           </div>
           <!-- Destination Details Section -->
           <div class="destination">
-            <h4>DESTINATION DETAILS</h4>
-            <label for="destination"
+            <h4 data-translate="destination-details">DESTINATION DETAILS</h4>
+            <label for="destination" data-translate="destination"
               >Destination<span style="color: red"><b>*</b></span></label
             >
             <select id="destination" name="destination" required>
-              <option value="" selected disabled>Select Destination</option>
+              <option value="" selected disabled data-translate="select-destination">Select Destination</option>
               <option value="Rizal's Tallest Monument">
                 Rizal's Tallest Monument
               </option>
@@ -111,7 +124,7 @@
               <option value="Mt. Makiling">Mt. Makiling</option>
             </select>
 
-            <label for="visit-date"
+            <label for="visit-date" data-translate="date-visit"
               >Date of Visit<span style="color: red"><b>*</b></span></label
             >
             <input type="date" id="visit-date" name="visit-date" required />
@@ -119,8 +132,8 @@
 
           <!-- Tourist Spot Feedback Section -->
           <div class="experience">
-            <h4>TOURIST SPOT FEEDBACK</h4>
-            <label
+            <h4 data-translate="tourist-spot-feedback">TOURIST SPOT FEEDBACK</h4>
+            <label data-translate="rate-clean"
               >Rate Cleanliness<span style="color: red"><b>*</b></span></label
             >
             <div class="cleanliness-rating" id="cleanliness-rating">
@@ -156,44 +169,44 @@
               </label>
             </div>
 
-            <label>Available Amenities:</label>
+            <label data-translate="avail-amenities">Available Amenities</label>
             <div class="checkbox-group">
               <label
                 ><input
                   type="checkbox"
                   name="amenities"
                   value="Restrooms"
-                />Restrooms</label
+                /><span data-translate="restrooms">Restrooms</span></label
               >
               <label
                 ><input
                   type="checkbox"
                   name="amenities"
                   value="Souvenir Shop"
-                />Souvenir Shop</label
+                /><span data-translate="souvenir-shop">Souvenir Shop</span></label
               >
               <label
                 ><input
                   type="checkbox"
                   name="amenities"
                   value="Tour Guides"
-                />Tour Guides</label
+                /><span data-translate="tour-guides">Tour Guides</span></label
               >
             </div>
 
-            <label for="suggestions">Suggestions</label>
+            <label for="suggestions" data-translate="suggestions">Suggestions</label>
             <textarea id="suggestions" name="suggestions" rows="4"></textarea>
           </div>
           <!-- Submit Button -->
           <div class="submit-container">
-            <button type="button" onclick="displayPrompt()">Submit</button>
+            <button type="button" onclick="displayPrompt()" data-translate="submit">Submit</button>
           </div>
           <!-- Prompt Messages -->
           <div class="prompt-message" id="promptMessage">
             <div class="prompt-container">
               <div class="dialog-box">
                 <div class="dialog-content">
-                  <p>Are you sure with the details?</p>
+                  <p data-translate="dialog-msg">Are you sure with the details?</p>
                   <div class="prompt-button-container">
                     <input
                       type="submit"
@@ -218,7 +231,7 @@
             <div class="prompt-container">
               <div class="dialog-box">
                 <div class="dialog-content">
-                  <p id="prompt-text">
+                  <p id="prompt-text" data-translate="thanks">
                     "Thank you for participating in the survey!"
                   </p>
                   <input
@@ -235,7 +248,7 @@
             <div class="prompt-container">
               <div class="dialog-box">
                 <div class="dialog-content">
-                  <p id="prompt-text">
+                  <p id="prompt-text" data-translate="denied">
                     "Form cannot be submitted, there are missing fields."
                   </p>
                   <input
@@ -251,6 +264,7 @@
         </form>
       </div>
     </main>
+
     <!-- Sidebar -->
     <div class="right-sidebar" id="sidebarBody">
       <div class="right-container">
@@ -260,12 +274,22 @@
           </div>
           <div class="sidepanel-tabs">
             <div class="surveyTabs">
-              <a href="./healthForm.html">Health Survey</a>
-              <a href="./tourismForm.html">Tourism Feedback</a>
+              <a href="./healthForm.html" data-translate="Health Form"
+                >Health Form</a
+              >
+              <a href="./tourismForm.html" data-translate="Tourism Survey"
+                >Tourism Survey</a
+              >
             </div>
             <div class="recordTabs">
-              <a href="./healthFormRecords.html">Health Records</a>
-              <a href="./tourismFormRecords.html">Tourism Feedback Records</a>
+              <a href="./healthFormRecords.html" data-translate="Health Records"
+                >Health Records</a
+              >
+              <a
+                href="./tourismFormRecords.html"
+                data-translate="Tourism Feedback Records"
+                >Tourism Feedback Records</a
+              >
             </div>
           </div>
         </div>
@@ -276,13 +300,19 @@
                 src="../assets/icons/city-seal.svg"
                 alt="Official Seal of Calamba"
               />
-              <label for="logo-name">City of Calamba</label>
+              <label for="logo-name" data-translate="City of Calamba"
+                >City of Calamba</label
+              >
             </div>
-            <label class="trademark">Created @ 2025</label>
+            <label class="trademark" data-translate="Developed - 2025"
+              >Developed - 2025</label
+            >
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Footer Page-->
     <footer>
       <div class="footer-content">
         <div class="logo-footer">
@@ -290,32 +320,47 @@
             src="../assets/icons/city-seal.svg"
             alt="Official Seal of Calamba"
           />
-          <label>City of Calamba</label>
+          <label data-translate="City of Calamba">City of Calamba</label>
         </div>
-        <label class="trademark">Developed - 2025</label>
+        <label class="trademark" data-translate="Developed - 2025"
+          >Developed - 2025</label
+        >
       </div>
 
       <div class="links">
-        <h4>About</h4>
-        <p class="description">
+        <h4 data-translate="About">About</h4>
+        <p
+          class="description"
+          data-translate="This website offers community resources, including health surveys, records access, and information on Calamba's tourist attractions."
+        >
           This website offers community resources, including health surveys,
           records access, and information on Calamba's tourist attractions.
         </p>
       </div>
       <div class="links">
-        <h4>Explore</h4>
-        <a href="./index.html">Home</a>
-        <a href="#section-2">Surveys</a>
-        <a href="#section-2">Records</a>
+        <h4 data-translate="Explore">Explore</h4>
+        <a href="./index.html" data-translate="Home">Home</a>
+        <a href="#section-2" data-translate="Surveys">Surveys</a>
+        <a href="#section-2" data-translate="Records">Records</a>
       </div>
 
       <div class="footer-options">
         <select class="language-dropdown" id="languageSwitcher">
           <option value="en">English</option>
           <option value="tl">Filipino</option>
+          <option value="es">Español</option>
+          <option value="zh">简体中文</option>
+          <option value="ms">Melayu</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="th">ไทย</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="ja">日本語</option>
         </select>
       </div>
     </footer>
+
+    <!-- Local Scripts -->
+    <script src="../scripts/languages/tourismFormLang.js"></script>
     <script src="../scripts/components/sidebar.js"></script>
     <script src="../scripts/tourismForm.js"></script>
   </body>
