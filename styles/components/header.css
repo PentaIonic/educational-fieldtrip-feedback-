@@ -6,6 +6,10 @@
   .sidebar-button {
     display: flex;
   }
+
+  .logo-area {
+    justify-content: start;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -15,6 +19,10 @@
 
   .sidebar-button {
     display: none;
+  }
+  
+  .logo-area {
+    justify-content: center;
   }
 }
 
@@ -36,7 +44,6 @@
 
 .logo-area {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100%;
   width: 350px;
@@ -140,8 +147,7 @@
   visibility: hidden;
 }
 
-.dropdown-survey-content a:hover,
-.dropdown-records-content a:hover {
+.dropdown-survey-content a:hover, .dropdown-records-content a:hover {
   background-color: var(--secondary-color);
 }
 
