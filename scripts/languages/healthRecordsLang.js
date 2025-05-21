@@ -23,7 +23,7 @@ const translations = {
     "last-checkup": "Last Medical Check-up Date",
     "health-notes": "Health Notes",
     actions: "Actions",
-    "print-records": "Imprimir Registros",
+    "print-records": "Print Records",
   },
   tl: {
     "City of Calamba": "Lungsod ng Calamba",
